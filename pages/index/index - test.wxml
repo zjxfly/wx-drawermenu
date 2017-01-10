@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view id='id-main-page' class='main-page' animation='{{animationData}}' style='position:{{mainPagePosition}};-webkit-transform:translateX({{10}}rpx); transform:translateX({{10}}rpx); transition:transform 100ms linear 0ms'
+ bindtouchstart='onMainPageTouchstart' bindtouchmove='onMainPageTouchmove' bindtouchend='onMainPageTouchend'>
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
+<view class='drawer-menu' animation='{{animationData}}' style='position:{{mainPagePosition}};left:{{drawerMenuLeft}}rpx;'>
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName2}}</text>
+</view></view>
